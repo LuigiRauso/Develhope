@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <div>
+        <label for="email-input">E-mail address:</label>
+        <input
+          type="email"
+          id="email-input"
+          name="email"
+          placeholder="type your email"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="password-input">Password:</label>
+        <input
+          type="password"
+          id="password-input"
+          name="password"
+          placeholder="type your password"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="name-input">Name:</label>
+        <input
+          type="text"
+          id="name-input"
+          name="name"
+          placeholder="type your first name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="lastname-input">Last name:</label>
+        <input
+          type=""
+          id="lastname-input"
+          name="lastname"
+          placeholder="type your last name"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="bdate-input">Date of birth:</label>
+        <input type="date" id="bdate-input" name="bdate" required />
+      </div>
+
+      <div>
+        <label for="tel-input">Telephone number:</label>
+        <input
+          type="tel"
+          id="tel-input"
+          name="tel"
+          placeholder="+39 1234567890"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="plan-input">Choose your plan:</label>
+        <select id="plan-input" name="plan">
+          <option value="">select your plan</option>
+          <option value="free">Free plan</option>
+          <optgroup label="-Other Plans-">
+            <option value="basic">Basic plan</option>
+            <option value="standard">Standard plan</option>
+            <option value="premium">Premium plan</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div>
+        <label for="checkbox-input">Pro Plan:</label>
+        <input type="checkbox" id="checkbox-input" name="checkbox" />
+      </div>
+
+      <div>
+        <label for="ccn-input">Credit card number</label>
+        <input
+          type="text"
+          id="ccn-input"
+          name="credit-card-number"
+          placeholder="0000 0000 0000 0000"
+          maxlength="16"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="cvc-input">CVC</label>
+        <input
+          type="password"
+          id="cvc-input"
+          name="cvc"
+          placeholder="000"
+          maxlength="3"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="exp-date-input">Expiration date:</label>
+        <input type="month" id="exp-date-input" name="expiration" required />
+      </div>
+
+      <div>
+        <label for="bill-address-input">Billing Address:</label>
+        <input
+          type="text"
+          id="bill-address-input"
+          name="billing-address"
+          placeholder="type your billing address"
+          required
+        />
+      </div>
+
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
