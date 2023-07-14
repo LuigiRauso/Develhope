@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luigi's website</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><b>Navbar</b></li>
+          <li>
+            <a href="#home"><b>Home</b></a>
+          </li>
+          <li><a href="#Link">Link</a></li>
+          <li>
+            <a href="#dropdown">Dropdown</a>
+            <ul>
+              <li><a href="#link1">Link 1</a></li>
+              <li><a href="#link2">Link 2</a></li>
+              <li><a href="#link3">Link 3</a></li>
+            </ul>
+          </li>
+          <li><a href="">Disabled</a></li>
+          <li>
+            <form>
+              <input type="text" name="search" placeholder="Search" />
+              <button type="search">Search</button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
+
+<!-- -Considerazioni personali:
+La Navigation Bar richiesta è di tipo orizzontale, ma quest'ultima non può essere replicata senza CSS.
+Un "workaroud" potrebbe essere quello di utilizzare <table>, ma l'esercizio ci richiede di utilizzare <ul>.
+
+Il dropdown menu se creato utilizzando <ul>, sarà sempre visibile senza utilizzare CSS.
+Mentre se si decide di utilizzare <select>, il menu non sarà funzionale senza JS. -->
