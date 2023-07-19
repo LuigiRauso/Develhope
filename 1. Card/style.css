@@ -1,0 +1,46 @@
+* {
+  font-family: sans-serif;
+}
+
+article {
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+  border-bottom: 1px solid darkgray;
+}
+
+li:last-of-type {
+  border-bottom: none;
+}
+
+h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+p,
+a {
+  display: inline-block;
+  margin: 0px;
+  padding: 15px;
+  border-bottom: none;
+}
