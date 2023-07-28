@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luigi's website Responsive</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="main-menu">
+          <li class="navbar-text"><b>TEAMCODE</b></li>
+          <li>
+            <a href="#home" class="home"><b>Home</b></a>
+          </li>
+          <li><a href="#Link" class="link">About us</a></li>
+          <li>
+            <a href="#dropdown" class="dropdown" tabindex="0">Courses ▼</a>
+            <ul class="dropdown-menu">
+              <li><a href="#link1">HTML</a></li>
+              <li><a href="#link2">CSS3</a></li>
+              <li><a href="#link3">JAVASCRIPT</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="disabled-link">Disabled</a></li>
+          <li class="search-form">
+            <form>
+              <input type="text" name="search" placeholder="Search" />
+              <button type="search">Search</button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hambuger-menu">
+        <ul class="main-menu">
+          <li class="navbar-text"><b>TEAMCODE</b></li>
+          <li class="icon"><i class="fa-solid fa-bars"></i></li>
+        </ul>
+        <ul class="sidebar">
+          <li>
+            <a href="#home" class="home"><b>HOME</b></a>
+          </li>
+          <li><a href="#Link" class="link">About us</a></li>
+          <li>
+            <a href="#dropdown" class="dropdown" tabindex="0"
+              >Courses (cliccami)
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#link1">HTML</a></li>
+              <li><a href="#link2">CSS3</a></li>
+              <li><a href="#link3">JAVASCRIPT</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="disabled-link">Disabled</a></li>
+          <li class="search-form">
+            <form>
+              <input type="text" name="search" placeholder="Search" />
+              <button type="search">SEARCH</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>
