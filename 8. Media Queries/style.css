@@ -1,8 +1,12 @@
+/* ** PER LE MEDIA QUERY ** 
+- Se il colore di sfondo è GIALLO, allora sei in modalità MOBILE.
+- Se il colore di sfondo è VIOLA, allora sei in modalità TABLET.
+- Se il colore di sfondo cambia gradualmente da un colore a un altro, allora sei in modalità DESKTOP.*/
+
 * {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  box-sizing: border-box;
 }
 
 body {
@@ -33,7 +37,7 @@ body {
   border-radius: 25px;
   box-shadow: 10px 10px 39px -13px rgb(100, 100, 100);
 
-  max-width: 506px;
+  max-width: 500px;
   max-height: 800px;
 
   background: linear-gradient(
@@ -65,18 +69,19 @@ body {
 
   overflow: hidden;
 
-  margin: 0;
+  margin: 0px;
 }
 
 .card .card-header .profile-pic img {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
 }
 
 /* AUTHOR INFO */
 .card .card-header .author-info {
   margin: auto;
   margin-left: 10px;
+  font-size: 1.1rem;
 }
 
 .card .card-header .author-info time {
@@ -87,7 +92,7 @@ body {
   display: flex;
   align-items: center;
 
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 /* BODY */
@@ -107,12 +112,15 @@ hr {
 
 /* INTERACTIONS */
 .card .interactions {
+  display: flex;
+  justify-content: space-between;
   margin: 10px;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .card .interactions i {
-  padding-left: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* BOTTOM */
@@ -136,7 +144,7 @@ hr {
 }
 
 .card .description .message {
-  font-size: 17px;
+  font-size: 20px;
   font-style: oblique;
 
   word-spacing: 5px;
@@ -171,23 +179,28 @@ hr {
   .cards-container {
     flex-wrap: wrap;
     align-items: center;
+    background-color: goldenrod;
   }
 
   .card {
-    max-width: 375px;
+    max-width: 350px;
   }
 
   .card .pic {
-    max-width: 330px;
-    height: 330px;
+    max-width: 350px;
+    height: 350px;
   }
 
   .card .interactions {
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 5px;
     margin-bottom: 0px;
+  }
+
+  .card .interactions i {
+    padding-left: 30px;
   }
 
   .card .description {
@@ -204,12 +217,12 @@ hr {
   }
 
   .card .description .author h3 {
-    font-size: 16px;
+    font-size: 20px;
     padding-bottom: 8px;
   }
 
   .card .description .message {
-    font-size: 15px;
+    font-size: 18px;
     word-spacing: 1px;
 
     padding: 5px;
@@ -221,20 +234,41 @@ hr {
   .cards-container {
     flex-wrap: wrap;
     align-items: center;
+    justify-content: flex-start;
+    background-color: darkslateblue;
   }
 
   .card {
-    max-width: 309px;
+    max-width: 250px;
+  }
+
+  .card .card-header .profile-pic {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card .card-header .profile-pic img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card .card-header .options {
+    padding-left: 10px;
+    font-size: 1.8rem;
   }
 
   .card .pic {
-    max-width: 303px;
-    height: 303px;
+    max-width: 250px;
+    height: 250px;
+  }
+
+  .card .card-header .author-info {
+    font-size: smaller;
   }
 
   .card .interactions {
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     font-size: 1.8rem;
     margin: 5px;
     margin-bottom: 0px;
@@ -249,7 +283,7 @@ hr {
   }
 
   .card .description .author {
-    justify-content: flex-start;
+    justify-content: center;
     margin-left: 6px;
   }
 
