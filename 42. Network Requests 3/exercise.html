@@ -1,0 +1,49 @@
+<html>
+  <body>
+    <div id="container">
+      <form>
+        <div>
+          <label>Title</label>
+          <input type="text" id="todo-title" />
+        </div>
+        <div>
+          <label>Completed</label>
+          <input type="checkbox" id="todo-completed" />
+        </div>
+
+        <button type="submit" id="submit-todo"></button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  const form = document.querySelector("form");
+
+  async function postRequest(e) {
+    try {
+      e.preventDefault();
+
+      const inputData = {
+        title: e.target[0].value,
+        completed: e.target[1].checked,
+      };
+
+      const API_URL = "https://jsonplaceholder.typicode.com/posts";
+      const response = await fetch(API_URL, {
+        method: "POST",
+        body: JSON.stringify(inputData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await response.json();
+    } catch (error) {
+      console.error(
+        `An error has occurred during the fetch operation. ${error.message}`
+      );
+    }
+  }
+
+  form.addEventListener("submit", postRequest);
+</script>
