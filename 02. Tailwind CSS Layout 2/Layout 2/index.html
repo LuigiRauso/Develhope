@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style style type="text/tailwindcss">
+      @layer components {
+        section {
+          @apply p-8 m-4;
+        }
+        ul {
+          @apply grid grid-cols-2;
+        }
+        li {
+          @apply p-4 m-4 bg-white;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="grid w-[60em] mx-auto grid-cols-6">
+    <section id="green" class="order-1 col-span-6 bg-green-300">
+      <p>GREEN</p>
+    </section>
+    <section id="yellow" class="order-2 col-span-2 bg-yellow-300">
+      <p>YELLOW</p>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </section>
+    <section id="orange" class="order-5 col-span-4 bg-orange-300">
+      <p>ORANGE</p>
+    </section>
+    <section id="red" class="order-3 col-span-2 bg-red-300">
+      <p>RED</p>
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+      </ul>
+    </section>
+    <section id="blue" class="order-4 col-span-2 row-span-2 bg-blue-300">
+      <p>BLUE</p>
+    </section>
+  </body>
+</html>
