@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="container flex flex-col py-10 mx-auto">
+    <header>
+      <nav
+        class="px-8 py-5 font-medium border border-solid rounded-lg shadow-lg"
+      >
+        <ul class="flex flex-row text-sm">
+          <li class="mx-2"><a href="#">Projects</a></li>
+          <li class="mx-2"><a href="#">About</a></li>
+          <li class="mx-2"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="flex flex-row justify-between py-8 hero-container">
+        <div class="left">
+          <div class="description">
+            <h1 class="pb-8 text-5xl font-semibold">
+              <span class="text-5xl font-bold">John Doe </span>web
+              <br />developer
+            </h1>
+            <p class="pb-8 text-sm font-semibold">
+              I'm a web developer with more than 10 years of experience
+            </p>
+            <button
+              class="px-10 py-1 text-sm text-white rounded-3xl bg-violet-500"
+            >
+              Hire me
+            </button>
+          </div>
+          <div class="flex flex-row pt-8 buttons">
+            <div
+              class="px-2 py-1 mr-4 text-sm text-white rounded-lg bg-rose-500"
+            >
+              HTML
+            </div>
+            <div
+              class="px-2 py-1 mr-4 text-sm text-white bg-orange-500 rounded-lg"
+            >
+              CSS
+            </div>
+            <div
+              class="px-2 py-1 mr-4 text-sm text-white bg-pink-500 rounded-lg"
+            >
+              javascript
+            </div>
+          </div>
+        </div>
+        <div class="max-w-xs mt-[-2rem] mr-[4rem]">
+          <img src="assets/image.png" alt="John Doe" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="projects-container">
+        <div class="flex pb-8 selector">
+          <h3 class="mr-4 text-xl font-bold">Latest Projects</h3>
+          <select
+            id="date-select"
+            name="date"
+            class="p-1 border border-solid rounded-lg border-grey"
+          >
+            <option value="all" selected="selected">All</option>
+            <option value="month">Last month</option>
+            <option value="year">Last year</option>
+          </select>
+        </div>
+        <div class="flex justify-between cards">
+          <div
+            class="max-w-xs p-4 border border-solid rounded-lg shadow-lg card"
+          >
+            <div class="title">
+              <h3 class="text-xl font-bold">
+                Noteworthy technology acquisition 2021
+              </h3>
+            </div>
+            <div class="description">
+              <p class="text-sm">
+                Here are the biggest enterprise technology acquisition of 2021
+                so far, in reverse chronological order.
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-w-xs p-4 border border-solid rounded-lg shadow-lg card"
+          >
+            <div class="title">
+              <h3 class="text-xl font-bold">
+                Noteworthy technology acquisition 2021
+              </h3>
+            </div>
+            <div class="description">
+              <p class="text-sm">
+                Here are the biggest enterprise technology acquisition of 2021
+                so far, in reverse chronological order.
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-w-xs p-4 border border-solid rounded-lg shadow-lg card"
+          >
+            <div class="title">
+              <h3 class="text-xl font-bold">
+                Noteworthy technology acquisition 2021
+              </h3>
+            </div>
+            <div class="description">
+              <p class="text-sm">
+                Here are the biggest enterprise technology acquisition of 2021
+                so far, in reverse chronological order.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col py-16 newletter-container">
+        <div class="title">
+          <h3 class="text-xl font-bold">Subscribe to my newsletter</h3>
+        </div>
+        <div class="flex flex-row items-end justify-between mt-3 content">
+          <div class="description-left">
+            <p class="text-sm font-semibold">
+              I write about web development, design, and other cool stuff.
+            </p>
+          </div>
+          <div class="flex items-center justify-center right">
+            <form
+              action="#"
+              method="post"
+              class="self-center p-3 mr-3 text-sm border border-solid rounded-lg w-80"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+            </form>
+            <button
+              type="submit"
+              class="px-10 py-3 text-sm text-white h-13 rounded-3xl bg-violet-500"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer class="flex justify-between">
+        <ul class="flex text-sm font-semibold">
+          <li class="pr-4">Linkedin</li>
+          <li class="pr-4">Github</li>
+          <li class="pr-4">Twitter</li>
+          <li class="pr-4">Instagram</li>
+        </ul>
+        <ul class="text-sm font-semibold">
+          <li>@ 2023 John Doe</li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
